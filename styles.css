@@ -399,13 +399,27 @@ section {
   animation: fadeIn 1s ease forwards;
 }
 
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-primary);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  transition: transform var(--transition-normal);
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
 .image-placeholder {
-  width: 350px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--accent-primary);
-  box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
   position: relative;
 }
 
