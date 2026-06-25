@@ -397,6 +397,8 @@ section {
   justify-content: center;
   align-items: center;
   animation: fadeIn 1s ease forwards;
+  min-width: 200px;
+  min-height: 200px;
 }
 
 .profile-image {
