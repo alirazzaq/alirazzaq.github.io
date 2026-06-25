@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ali Raza - Full Stack Developer Portfolio. Professional portfolio showcasing projects, skills, experience, and contact information.">
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alirazzaq.github.io">
+    <meta property="og:title" content="Ali Raza - Full Stack Developer">
+    <meta property="og:description" content="Professional portfolio showcasing projects, skills, experience, and contact information.">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@alirazzaq">
+    <meta name="twitter:title" content="Ali Raza - Full Stack Developer">
+    <meta name="twitter:description" content="Professional portfolio showcasing projects, skills, experience, and contact information.">
+    
+    <title>Ali Raza - Full Stack Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">Ali Raza</div>
+            <ul class="navbar-links">
+                <li><a href="#about" class="nav-link active">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-content">
+                    <h1 class="about-greeting">
+                        <span class="greeting-text">Hello, I'm </span>
+                        <span class="name-highlight">Ali Raza</span>
+                    </h1>
+                    <h2 class="about-title">Full Stack Developer</h2>
+                    <p class="about-description">
+                        I'm a passionate developer with expertise in building modern web applications.
+                        I specialize in creating efficient, scalable solutions that deliver great user experiences.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-outline">View My Work</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="100" fill="#1a1a1a" />
+                            <circle cx="100" cy="80" r="30" fill="#00d4ff" />
+                            <path d="M70 140 Q100 120 130 140" stroke="#00d4ff" stroke-width="3" fill="none" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="10" width="80" height="80" rx="5" fill="#1a1a1a" />
+                                <rect x="20" y="20" width="60" height="40" rx="3" fill="#2a2a2a" />
+                                <circle cx="50" cy="70" r="8" fill="#00d4ff" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">A full-featured e-commerce platform with product listings, cart functionality, and secure checkout.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/alirazzaq/ecommerce-platform" target="_blank" class="project-link">
+                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://ecommerce-demo.com" target="_blank" class="project-link">
+                                <svg class="demo-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 4H5c-1.11 0-2 .9-2 2v11c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="15" y="15" width="70" height="70" rx="5" fill="#1a1a1a" />
+                                <rect x="25" y="25" width="50" height="30" rx="3" fill="#2a2a2a" />
+                                <rect x="25" y="60" width="50" height="20" rx="3" fill="#2a2a2a" />
+                                <circle cx="50" cy="80" r="6" fill="#00d4ff" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">A productivity application for managing tasks, projects, and team collaboration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Material UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/alirazzaq/task-manager" target="_blank" class="project-link">
+                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://task-manager-demo.com" target="_blank" class="project-link">
+                                <svg class="demo-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 4H5c-1.11 0-2 .9-2 2v11c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="20" y="20" width="60" height="60" rx="5" fill="#1a1a1a" />
+                                <rect x="30" y="30" width="40" height="25" rx="3" fill="#2a2a2a" />
+                                <circle cx="50" cy="45" r="5" fill="#00d4ff" />
+                                <rect x="30" y="60" width="40" height="15" rx="3" fill="#2a2a2a" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">A responsive portfolio website showcasing projects, skills, and professional experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">GitHub Pages</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/alirazzaq/portfolio" target="_blank" class="project-link">
+                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="10" width="80" height="80" rx="10" fill="#1a1a1a" />
+                                <circle cx="30" cy="30" r="8" fill="#00d4ff" />
+                                <circle cx="50" cy="50" r="8" fill="#0099cc" />
+                                <circle cx="70" cy="70" r="8" fill="#00d4ff" />
+                                <path d="M30 30 L50 50 L70 70" stroke="#00d4ff" stroke-width="2" fill="none" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">API Integration Dashboard</h3>
+                        <p class="project-description">Dashboard for visualizing and managing API integrations with real-time data.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/alirazzaq/api-dashboard" target="_blank" class="project-link">
+                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="15" y="20" width="70" height="60" rx="5" fill="#1a1a1a" />
+                                <rect x="20" y="25" width="60" height="8" rx="2" fill="#00d4ff" />
+                                <rect x="20" y="38" width="40" height="6" rx="2" fill="#2a2a2a" />
+                                <rect x="20" y="48" width="50" height="6" rx="2" fill="#2a2a2a" />
+                                <rect x="20" y="58" width="35" height="6" rx="2" fill="#2a2a2a" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Blog Platform</h3>
+                        <p class="project-description">A content management system for creating, editing, and publishing blog posts.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Markdown</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/alirazzaq/blog-platform" target="_blank" class="project-link">
+                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://blog-demo.com" target="_blank" class="project-link">
+                                <svg class="demo-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 4H5c-1.11 0-2 .9-2 2v11c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="20" y="30" width="60" height="40" rx="10" fill="#1a1a1a" />
+                                <circle cx="50" cy="20" r="8" fill="#00d4ff" />
+                                <path d="M40 40 L60 40 M40 50 L60 50 M40 60 L60 60" stroke="#00d4ff" stroke-width="2" />
+                                <circle cx="50" cy="70" r="6" fill="#0099cc" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Application</h3>
+                        <p class="project-description">Real-time weather application with location-based forecasts and historical data.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">OpenWeather API</span>
+                            <span class="tech-tag">Geolocation</span>
+                            <span class="tech-tag">CSS Animations</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/alirazzaq/weather-app" target="_blank" class="project-link">
+                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><span class="skill-name">HTML5</span></div>
+                        <div class="skill-item"><span class="skill-name">CSS3</span></div>
+                        <div class="skill-item"><span class="skill-name">JavaScript</span></div>
+                        <div class="skill-item"><span class="skill-name">TypeScript</span></div>
+                        <div class="skill-item"><span class="skill-name">React</span></div>
+                        <div class="skill-item"><span class="skill-name">Next.js</span></div>
+                        <div class="skill-item"><span class="skill-name">Redux</span></div>
+                        <div class="skill-item"><span class="skill-name">Tailwind CSS</span></div>
+                        <div class="skill-item"><span class="skill-name">Material UI</span></div>
+                        <div class="skill-item"><span class="skill-name">Bootstrap</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><span class="skill-name">Node.js</span></div>
+                        <div class="skill-item"><span class="skill-name">Express</span></div>
+                        <div class="skill-item"><span class="skill-name">Python</span></div>
+                        <div class="skill-item"><span class="skill-name">Django</span></div>
+                        <div class="skill-item"><span class="skill-name">REST APIs</span></div>
+                        <div class="skill-item"><span class="skill-name">GraphQL</span></div>
+                        <div class="skill-item"><span class="skill-name">WebSockets</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Databases</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><span class="skill-name">MongoDB</span></div>
+                        <div class="skill-item"><span class="skill-name">PostgreSQL</span></div>
+                        <div class="skill-item"><span class="skill-name">MySQL</span></div>
+                        <div class="skill-item"><span class="skill-name">Firebase</span></div>
+                        <div class="skill-item"><span class="skill-name">Redis</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">DevOps & Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><span class="skill-name">Git</span></div>
+                        <div class="skill-item"><span class="skill-name">GitHub</span></div>
+                        <div class="skill-item"><span class="skill-name">Docker</span></div>
+                        <div class="skill-item"><span class="skill-name">AWS</span></div>
+                        <div class="skill-item"><span class="skill-name">Vercel</span></div>
+                        <div class="skill-item"><span class="skill-name">Netlify</span></div>
+                        <div class="skill-item"><span class="skill-name">CI/CD</span></div>
+                        <div class="skill-item"><span class="skill-name">Jest</span></div>
+                        <div class="skill-item"><span class="skill-name">Mocha</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="section-header">
+                <h2 class="section-title">My Experience</h2>
+                <p class="section-subtitle">Professional journey</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-position">Senior Full Stack Developer</h3>
+                            <span class="experience-company">Tech Solutions Inc.</span>
+                            <span class="experience-period">2022 - Present</span>
+                            <span class="experience-location">San Francisco, CA</span>
+                        </div>
+                        <ul class="experience-description">
+                            <li class="description-item">Lead development of a SaaS platform serving 10,000+ users</li>
+                            <li class="description-item">Architected and implemented microservices architecture</li>
+                            <li class="description-item">Mentored junior developers and conducted code reviews</li>
+                            <li class="description-item">Optimized application performance, reducing load times by 40%</li>
+                            <li class="description-item">Collaborated with product managers to define roadmap and priorities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-position">Full Stack Developer</h3>
+                            <span class="experience-company">Digital Innovations</span>
+                            <span class="experience-period">2019 - 2022</span>
+                            <span class="experience-location">New York, NY</span>
+                        </div>
+                        <ul class="experience-description">
+                            <li class="description-item">Developed and maintained 15+ web applications</li>
+                            <li class="description-item">Implemented CI/CD pipelines using GitHub Actions</li>
+                            <li class="description-item">Designed RESTful APIs and GraphQL endpoints</li>
+                            <li class="description-item">Worked with cross-functional teams to deliver projects on time</li>
+                            <li class="description-item">Contributed to open-source projects and internal tooling</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-position">Frontend Developer</h3>
+                            <span class="experience-company">Web Studio</span>
+                            <span class="experience-period">2017 - 2019</span>
+                            <span class="experience-location">Boston, MA</span>
+                        </div>
+                        <ul class="experience-description">
+                            <li class="description-item">Built responsive, accessible user interfaces</li>
+                            <li class="description-item">Implemented design systems and component libraries</li>
+                            <li class="description-item">Optimized frontend performance and bundle sizes</li>
+                            <li class="description-item">Integrated third-party APIs and services</li>
+                            <li class="description-item">Conducted user testing and gathered feedback for improvements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-position">Web Developer</h3>
+                            <span class="experience-company">Freelance</span>
+                            <span class="experience-period">2015 - 2017</span>
+                            <span class="experience-location">Remote</span>
+                        </div>
+                        <ul class="experience-description">
+                            <li class="description-item">Developed custom websites for 20+ clients</li>
+                            <li class="description-item">Created e-commerce solutions with payment integration</li>
+                            <li class="description-item">Provided ongoing maintenance and support</li>
+                            <li class="description-item">Implemented SEO best practices</li>
+                            <li class="description-item">Managed client relationships and project timelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's build something together</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Connect with me</h3>
+                    <p class="contact-info-text">
+                        I'm currently looking for new opportunities and collaborations.
+                        Feel free to reach out if you have any questions or just want to connect.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/alirazzaq" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span class="social-name">GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/alirazzaq" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <span class="social-name">LinkedIn</span>
+                        </a>
+                        <a href="https://twitter.com/alirazzaq" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                            <span class="social-name">Twitter</span>
+                        </a>
+                        <a href="mailto:contact@alirazzaq.com" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span class="social-name">Email</span>
+                        </a>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="detail-icon">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.75 2.39 1.87 2.88.62.28 1.29.42 2 .42.11-.34.25-.7.42-1.02l-2.2-2.2z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-detail">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="detail-icon">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span>contact@alirazzaq.com</span>
+                        </div>
+                        <div class="contact-detail">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="detail-icon">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3 class="contact-form-title">Send me a message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="Your message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="submit-message hidden"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Ali Raza. All rights reserved.</p>
+            <p>Built with ❤️ and GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+        </svg>
+    </button>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
