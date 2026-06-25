@@ -3,7 +3,103 @@
  * Handles navigation, animations, and form interactions
  */
 
-// DOM Elements
+// Contact Form Handling
+// ============================================
+contactForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const name = contactForm.querySelector('#name').value;
+  const email = contactForm.querySelector('#email').value;
+  const message = contactForm.querySelector('#message').value;
+  
+  // Validate form
+  if (!name || !email || !message) {
+    showFormMessage('Please fill in all fields.', 'error');
+    return;
+  }
+  
+  // Validate email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    showFormMessage('Please enter a valid email address.', 'error');
+    return;
+  }
+  
+  // Show loading state
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
+  
+  // Simulate form submission (replace with actual API call)
+  try {
+    // In a real implementation, you would send the data to a backend
+    // For example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify({ name, email, message }) });
+    
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    
+    // Show success message
+    showFormMessage('Thank you for your message! I will get back to you soon.', 'success');
+    
+    // Reset form
+    contactForm.reset();
+    
+  } catch (error) {
+    showFormMessage('There was an error sending your message. Please try again.', 'error');
+  } finally {
+    submitBtn.textContent = 'Send Message';
+    submitBtn.disabled = false;
+  }
+});
+=======
+// ============================================
+// Contact Form Handling
+// ============================================
+contactForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const name = contactForm.querySelector('#name').value;
+  const email = contactForm.querySelector('#email').value;
+  const message = contactForm.querySelector('#message').value;
+  
+  // Validate form
+  if (!name || !email || !message) {
+    showFormMessage('Please fill in all fields.', 'error');
+    return;
+  }
+  
+  // Validate email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    showFormMessage('Please enter a valid email address.', 'error');
+    return;
+  }
+  
+  // Show loading state
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
+  
+  // For static GitHub Pages, redirect to mailto with pre-filled content
+  // This is a fallback since we don't have a backend API
+  try {
+    const subject = encodeURIComponent(`Portfolio Contact: ${name}`);
+    const body = encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`);
+    const mailtoUrl = `mailto:hello@alirazzaq.me?subject=${subject}&body=${body}`;
+    
+    // Open mail client
+    window.location.href = mailtoUrl;
+    
+    // Show success message
+    showFormMessage('Opening your email client...', 'success');
+    
+    // Reset form
+    contactForm.reset();
+    
+  } catch (error) {
+    showFormMessage('There was an error. Please email hello@alirazzaq.me directly.', 'error');
+  } finally {
+    submitBtn.textContent = 'Send Message';
+    submitBtn.disabled = false;
+  }
+});DOM Elements
 const navbar = document.getElementById('navbar');
 const navbarToggle = document.getElementById('navbarToggle');
 const navLinks = document.querySelectorAll('.nav-link');
